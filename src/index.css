@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  font-family: "Lato";
+  font-style: normal;
+}
+
+body {
+  overflow: hidden !important;
+  margin: 0;
+}
+
+.blueBtn {
+  user-select: none;
+  border: 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+
+  background: #0d4cd3;
+  border-radius: 8px;
+}
+
+.blueBtn:hover {
+  background: #0c45c0;
+}
+
+.blueBtn:active {
+  background: #0c3eac;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #0b1f33;
+}
+
+.itemInput {
+  width: 100%;
+  height: 52px;
+  position: relative;
+  background: #f5f7fa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.itemInput input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 0px;
+  background: transparent;
+  padding: 21px 16px 7px 16px;
+  box-sizing: border-box;
+  outline: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0b1f33;
+}
+
+.itemInput span {
+  user-select: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 16px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #66727f;
+
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.itemInput input:focus ~ span,
+.itemInput input:valid ~ span {
+  font-size: 10px;
+  transform: translateX(0px) translateY(-12px);
+}

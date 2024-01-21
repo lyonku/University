@@ -1,0 +1,14 @@
+.Shedule {
+  overflow: auto;
+  max-height: calc(100% - 100px);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 50px;
+  /* max-width: 850px; */
+  align-self: center;
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-end,
+.fc-direction-rtl .fc-daygrid-event.fc-event-start {
+  flex-wrap: wrap;
+}

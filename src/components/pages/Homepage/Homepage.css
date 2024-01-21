@@ -1,0 +1,350 @@
+/* Homepage styles start */
+
+.Homepage {
+  align-self: center;
+  max-width: 1800px;
+  box-sizing: border-box;
+  height: calc(100% - 70px);
+
+  width: 100%;
+  padding: 0 230px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.Homepage__header {
+  gap: 20px;
+  height: 100%;
+  max-height: 230px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 24px;
+  width: 100%;
+  background: linear-gradient(90deg, #ded9ff 0%, #f8eecb 100%);
+  border-radius: 12px;
+}
+
+.Homepage__title {
+  user-select: none;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Homepage__title img {
+  max-width: 38px;
+}
+
+.Homepage__info {
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.Homepage__info-item {
+  text-align: left;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #66727f;
+}
+
+.Homepage__body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+.HomepageBlocks_small {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+
+.HomepageBlock {
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px #e3ebfc, 0px 24px 48px rgba(230, 235, 245, 0.4);
+  border-radius: 12px;
+}
+
+.Homepage__schedule .HomepageBlock__header {
+  margin-bottom: 40px;
+  padding: 24px 24px 0 24px;
+}
+
+.HomepageBlock__header {
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HomepageBlock__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: #ef3f58;
+  border-radius: 16px;
+}
+
+.HomepageBlock__img > svg {
+  transform: scale(1.35);
+}
+
+.HomepageBlock__wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.HomepageBlock__info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4px;
+  flex-direction: column;
+}
+
+.HomepageBlock__title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #0b1f33;
+}
+
+.HomepageBlock__text {
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  color: #66727f;
+}
+
+.HomepageBlock__btn {
+  width: 24px;
+  cursor: pointer;
+}
+
+.Homepage__schedule div.HomepageBlock__btn {
+  width: auto;
+  align-self: flex-start;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  height: 36px;
+  background: #0d4cd3;
+  border-radius: 8px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.Homepage__schedule {
+  overflow: hidden;
+  padding: 0;
+}
+
+.HomepageSchedule__btns {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 8px;
+}
+
+div.HomepageSchedule__btn_active {
+  background: #fed13e;
+}
+
+.HomepageSchedule__btn {
+  user-select: none;
+  cursor: pointer;
+  background: #e4ecfd;
+  border-radius: 40px;
+  padding: 8px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0b1f33;
+}
+
+.HomepageSchedule__info {
+  font-size: 14px;
+  line-height: 20px;
+  color: #66727f;
+}
+
+.HomepageSchedule__header {
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.HomepageSchedule__body {
+  overflow: hidden;
+  display: flex;
+}
+
+.HomepageSchedule__item {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  background: #ffffff;
+  /* border-width: 1px 1px 1px 0px; */
+  border-width: 0px 0px 0px 0px;
+  border-style: solid;
+  border-color: #ecf0f8;
+  /* border-radius: 0px 12px 0px 0px; */
+  padding: 24px 14px 24px 24px;
+}
+
+.HomepageSchedule__item-time {
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  color: #66727f;
+}
+
+.HomepageSchedule__item-subject {
+  height: 100%;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-end;
+  color: #0b1f33;
+}
+
+.Homepage__userError {
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+  width: 100%;
+  font-weight: 300;
+  font-size: 22px;
+  color: #eb1a39;
+}
+
+.HomepageBlock__Error {
+  box-sizing: border-box;
+  padding: 0 24px 24px 24px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  color: #eb1a39;
+}
+
+.HomepageSchedule__none {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-end;
+  color: #0b1f33;
+}
+
+@media screen and (max-width: 1570px) {
+  .Main__body {
+    overflow-y: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Homepage {
+    align-self: center;
+    max-width: 890px;
+    padding: 0 20px;
+  }
+
+  .HomepageBlocks_small {
+    flex-wrap: wrap;
+    transition: 0.3s;
+  }
+
+  .HomepageBlocks_small {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .Homepage {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Homepage__schedule .HomepageBlock__header {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .Homepage__schedule div.HomepageBlock__btn {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Navbar {
+    opacity: 0;
+    transition: 0.3s;
+    margin-left: -72px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .HomepageBlocks_small {
+    gap: 12px;
+  }
+
+  .Homepage__header {
+    max-height: 250px;
+  }
+}
+
+/* Homepage styles end */
